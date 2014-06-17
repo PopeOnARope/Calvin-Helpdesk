@@ -1,0 +1,101 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>Calvin's Help Desk 1.0</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <script src="../bower_components/underscore/underscore.js"></script>
+        <!-- endbuild -->
+        
+    </head>
+<body>
+
+    <div class="container">
+        <!-- <div class="header">
+            <ul class="nav nav-pills pull-right">
+                <li class="active"><a href="http://theironyard.com/locations/charleston/">the iron yard</a></li>
+                <li class="active"><a href="http://jquery.com/">jQuery</a></li>
+                <li class="active"><a href="http://underscorejs.org/">_</a></li>
+            </ul>
+                <h1 class="text-muted">Calvin's TIY Help Desk</h1>
+        </div> -->
+
+        <div class="col-sm-4 red">
+            <img class="logo centered col-md-offest-5" src="images/askcalvin.png">
+            <div class="speechbubble">
+                <label><h3>Add your name to the "Requesting Enlightenment" board</h3></label>
+                <form action="" id="studentForm">
+                name:
+                    <input type="text" id="submit">
+                    <br>request: 
+                    <textarea class="form-control summary" rows="3" placeholder="Problem Summary">
+                    </textarea>
+                    <button type="submit">
+                        Add to List
+                    </button>
+                </form>
+            </div>
+            <img src="images/calvin.jpeg" class="calvin" alt="">
+        </div>
+
+        <div class="google col-sm-4 blue">
+            <div class="notePad">
+                <h3>Students seeking enlightenment:</h3>
+                <ul class="studentList">
+                </ul>
+            </div>
+            <div class="speechbubble">
+                    <h5>You are currently <a id="inLine"></a> in line to see Calvin. Approximate wait time is <a id="waitTime"></a> minutes</h5>
+                <h3>In the meantime, google your question here:</h3>
+
+                <div class="gcs">
+                    <!-- google search bar- - - - -  -->
+                    <script>
+                          (function() {
+                            var cx = '009111147535668371825:4cmtfm__vci';
+                            var gcse = document.createElement('script');
+                            gcse.type = 'text/javascript';
+                            gcse.async = true;
+                            gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                                '//www.google.com/cse/cse.js?cx=' + cx;
+                            var s = document.getElementsByTagName('script')[0];
+                            s.parentNode.insertBefore(gcse, s);
+                          })();
+                        </script>
+                        <gcse:searchbox></gcse:searchbox>
+
+                </div>
+            </div>
+            <img class = "calvin" src="images/calvin.jpeg" alt="">
+        </div>
+        <div class="col-sm-4 green" id= "searchResults"><gcse:searchresults></gcse:searchresults></div>
+
+    </div><!--  end container -->
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../bower_components/underscore/underscore.js"></script>
+
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/dropdown.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tooltip.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/transition.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/button.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/popover.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/carousel.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/Templates.js"></script>
+        <script src="scripts/main.js"></script>
+        <script src="scripts/itemsArray.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
