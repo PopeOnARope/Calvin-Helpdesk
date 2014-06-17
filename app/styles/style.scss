@@ -49,6 +49,7 @@ body{
 }
 .notePad{
 	background-color: #ddd;
+	list-decoration: none;
 }
 .studentlist{
 	li{
@@ -93,6 +94,15 @@ body{
 }
 .gcs{
 	overflow:scroll;
+}
+.red, .green, .blue{
+	height: inherit;
+}
+.container{
+	height: 100%;
+}
+.notepad{
+	height: 350px;
 }
 
 
